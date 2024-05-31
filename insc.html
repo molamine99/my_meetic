@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../monscript.js" defer></script>
+    <link rel="stylesheet" href="../styles.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <div>
+        <a href="moncompte.html">
+            <img src="../logo.png" class="logo" alt="tinder">
+        </a>
+    </div>
+    <fieldset>
+        <legend>Inscription</legend>
+    <form id="form" action="../controlleur/inscription.controleur.php" method="post" >
+        <label for="fname">nom</label>
+        <input type="text" id="fname" name="nom" placeholder="Votre nom"><br>
+        <label for="lname">Prenom</label>
+        <input type="text" id="lname" name="prenom" placeholder="Votre prenom"><br>
+
+        <label for="birthday">Date de naissance</label>
+        <input type="date" id="birthday" name="date_de_naissance"> <br>
+
+        <label for="genre">Genre</label>
+        <select id="genre" name="genre">
+                <option value="homme">Homme</option>
+                <option value="Femme">Femme</option>
+        </select><br>
+
+        <label for="ville">ville</label>
+        <select id="ville" name="ville">
+                <option value="Rome">Rome</option>
+                <option value="Madrid">Madrid</option>
+                <option value="New-York">New-York</option>
+                <option value="Ottawa">Ottawa</option>
+                <option value="Abidjan">Abidjan</option>
+                <option value="Paris" selected>Paris</option>
+        </select><br>
+
+        <label for="email">Email</label>
+        <input autocomplete="username" type="email" id="email" name="email"><br>
+
+        <label for="motdepasse">Mot de passe</label>
+        <input autocomplete="current-password" type="password" id="motdepasse" name="mot_de_passe"><br>
+    
+            <label for="loisir">Loisir</label>
+            <input type="text" id="loisir" name="loisir" placeholder="Loisir"><br>
+
+
+        <input type="submit" onclick="valider()" value="Inscription"><br>
+
+        <div class="hyperlink">
+        <a href="conn.html">Deja membre ?</a>
+    </div>
+
+    </form>
+</fieldset>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+</body>
+</html>

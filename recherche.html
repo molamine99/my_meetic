@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="../controlleur/rech.js" defer></script>
+    <title>Recherche</title>
+</head>
+<body>
+    <h1>Recherche de rencontres</h1>
+  
+    <div>
+      <label for="genre">Genre :</label>
+      <select id="genre" name="genre">
+        <option value="homme">Homme</option>
+        <option value="femme">Femme</option>
+      </select>
+    </div>
+    <div>
+      <label for="localisation">Localisation :</label>
+      <select id="localisation" name="localisation">
+        <option value="paris">Paris</option>
+        <option value="marseille">Marseille</option>
+        <option value="lyon">Lyon</option>
+      </select>
+    </div>
+  
+    <div>
+      <label for="tranche-age">Tranche d'âge :</label>
+      <select id="tranche-age" name="tranche-age">
+        <option value="20">20 ans</option>
+        <option value="20-30">20-30 ans</option>
+        <option value="30-40">30-40 ans</option>
+        <option value=">40">40 ans</option>
+      </select>
+    </div>
+  
+    <div>
+      <label for="loisir">Loisir :</label>
+      <input type="text" id="loisir" name="loisir">
+    </div>
+  
+    <button class="btnrechercher">Rechercher</button>
+  
+    <div id="resultats"></div>
+</body>
+</html>
